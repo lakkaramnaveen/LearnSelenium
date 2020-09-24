@@ -1,23 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="32.764466">
-<testcase classname="Check Login" name="Successful login with valid credentials" time="13.439775">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="92.355001">
+<testcase classname="Check Login" name="Successful login with valid credentials" time="12.134671">
 <system-out><![CDATA[Given User in on login page.................................................passed
 When User enters valid username and password................................passed
 And User clicks on login button.............................................passed
 Then User should be able to see Logout button...............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Check Login" name="UnSuccessful login with valid credentials" time="8.890301">
+<testcase classname="Check Login" name="UnSuccessful login with valid credentials" time="8.648247">
 <system-out><![CDATA[Given User has opened login page............................................passed
 When User enters valid username and invalid password........................passed
 And User clicked on login button............................................passed
 Then User should be able to see "Login was unsuccessfull"...................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login with datatable" name="Successful login with valid entries" time="10.43439">
+<testcase classname="user registration for demowebshop" name="Successful Registration of user with valid data" time="11.318476">
+<system-out><![CDATA[Given user is on register page..............................................passed
+When user enters valid personal details.....................................passed
+And user enters valid password..............................................passed
+And user clicks on register button..........................................passed
+Then user should see a message registration successful with continue button.passed
+]]></system-out>
+</testcase>
+<testcase classname="user registration" name="Registration of user with valid data" time="11.363675">
+<system-out><![CDATA[Given user is on register page of website...................................passed
+When user enters valid personal details like Male and rahul and kumar and rahulanna5@gmail.com.passed
+And user gives valid 123456 and 123456......................................passed
+And user click on register button...........................................passed
+Then user should see a message registration successful......................passed
+]]></system-out>
+</testcase>
+<testcase classname="check title" name="Check the title of demowebshop.tricentis" time="7.522305">
+<system-out><![CDATA[Given I am on the homepage of demoweb.......................................passed
+Then I should see that title contains demowebshop...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="check title" name="Check the source of demowbshop.tricentis" time="7.599026">
+<system-out><![CDATA[Given I am on the homepage of demoweb.......................................passed
+Then I should see that source contains demowebshop..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login with datatable" name="Successful login with valid entries" time="10.232514">
 <system-out><![CDATA[Given user in on demowebshoptricentis.com page..............................passed
 When user signs in with valid email and valid password......................passed
 Then user should see logout.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="demo scenario outline for login" name="Successful login with valid data" time="11.157521">
+<system-out><![CDATA[Given Application is opened.................................................passed
+When I provide valid naveen1234@gmail.com and valid 123456..................passed
+Then I should see logout link...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="demo scenario outline for login" name="Successful login with valid data 2" time="12.378566">
+<system-out><![CDATA[Given Application is opened.................................................passed
+When I provide valid rahulanna@gmail.com and valid 123456...................passed
+Then I should see logout link...............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
