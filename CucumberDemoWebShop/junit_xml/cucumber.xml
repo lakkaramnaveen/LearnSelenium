@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="32.764466">
+<testcase classname="Check Login" name="Successful login with valid credentials" time="13.439775">
+<system-out><![CDATA[Given User in on login page.................................................passed
+When User enters valid username and password................................passed
+And User clicks on login button.............................................passed
+Then User should be able to see Logout button...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check Login" name="UnSuccessful login with valid credentials" time="8.890301">
+<system-out><![CDATA[Given User has opened login page............................................passed
+When User enters valid username and invalid password........................passed
+And User clicked on login button............................................passed
+Then User should be able to see "Login was unsuccessfull"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login with datatable" name="Successful login with valid entries" time="10.43439">
+<system-out><![CDATA[Given user in on demowebshoptricentis.com page..............................passed
+When user signs in with valid email and valid password......................passed
+Then user should see logout.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

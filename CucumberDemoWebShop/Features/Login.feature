@@ -1,12 +1,12 @@
 Feature: Check Login
-@smoke
+#@smoke
 Scenario: Successful login with valid credentials
 Given User in on login page
 When User enters valid username and password
 And User clicks on login button
 Then User should be able to see Logout button.
 
-@regression
+#@regression
 Scenario: UnSuccessful login with valid credentials
 Given User has opened login page
 When User enters valid username and invalid password
